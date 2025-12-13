@@ -30,17 +30,17 @@ The DB-IP Lite databases are licensed under [Creative Commons Attribution 4.0 In
 
 ```bash
 # Run with frontend enabled (default)
-docker run -p 8080:8080 ghcr.io/your-username/ip-lookup:latest
+docker run -p 8080:8080 ghcr.io/shoyu-dev/ip-lookup:latest
 
 # Run in headless mode (API only)
-docker run -p 8080:8080 -e HEADLESS=true ghcr.io/your-username/ip-lookup:latest
+docker run -p 8080:8080 -e HEADLESS=true ghcr.io/shoyu-dev/ip-lookup:latest
 ```
 
 ### Building from Source
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/ip-lookup.git
+git clone https://github.com/Shoyu-Dev/ip-lookup.git
 cd ip-lookup
 
 # Build and run with Docker
