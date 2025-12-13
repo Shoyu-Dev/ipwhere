@@ -1,0 +1,56 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+/ip-lookup
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Go workspace file
+go.work
+
+# Dependency directories
+vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+web/node_modules/
+
+# Build outputs
+web/dist/
+static/
+dist/
+
+# MMDB database files (downloaded at build time)
+data/
+*.mmdb
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Swagger generated docs (can be regenerated)
+docs/docs.go
+docs/swagger.json
+docs/swagger.yaml
