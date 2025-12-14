@@ -127,6 +127,12 @@ jobs:
 
   build-and-push:
     needs: [check-db]
+    # Only build if: code push, PR, tag, manual trigger, OR scheduled run with DB change
+    if: |
+      github.event_name == 'push' ||
+      github.event_name == 'pull_request' ||
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'schedule' && needs.check-db.outputs.db_changed == 'true')
     runs-on: ubuntu-latest
     permissions:
       contents: read
